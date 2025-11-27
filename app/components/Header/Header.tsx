@@ -1,11 +1,12 @@
 import Link from "next/link";
+import css from './header.module.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className={css.header}>
       <Link href='/' aria-label='Home'>NoteHub</Link>
       <nav aria-label="Main Navigation">
-        <ul className="navigation">
+        <ul className={css.navigation}>
           <li>
             <Link href="/">Home</Link>
           </li>
