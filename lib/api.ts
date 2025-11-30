@@ -1,12 +1,12 @@
 import axios from 'axios';
 import type { Note, NewNote } from '@/lib/types'
 
-interface NoteHttpResponse {
+export interface NoteHttpResponse {
   notes: Note[];
   totalPages: number;
 }
 
-interface FetchNotesProps {
+export interface FetchNotesProps {
   query: string;
   page: number;
 }
@@ -18,7 +18,7 @@ const api = axios.create({
   },
 });
 
-export async function fetchNotes({query, page}: FetchNotesProps): Promise<NoteHttpResponse> {
+export async function fetchNotes({ query, page }: FetchNotesProps): Promise<NoteHttpResponse> {
   const response = await api.get<NoteHttpResponse>('/notes', {
     params: {
       search: query,
