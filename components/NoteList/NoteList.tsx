@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 import Link from 'next/link';
 
 import css from './NoteList.module.css';
-import { type Note } from '@/types/types';
+import { type Note } from '@/types/note';
 import { deleteNote } from '@/lib/api';
 
 interface NoteListProps {

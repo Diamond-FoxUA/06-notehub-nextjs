@@ -1,5 +1,5 @@
 import axios from 'axios';
-import type { Note, NewNote } from '@/types/types'
+import type { Note, NewNote } from '@/types/note'
 
 export interface NoteHttpResponse {
   notes: Note[];
