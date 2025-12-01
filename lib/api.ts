@@ -30,6 +30,11 @@ export async function fetchNotes({ query, page }: FetchNotesProps): Promise<Note
   return response.data;
 }
 
+export async function fetchNoteById(id: string): Promise<Note> {
+  const response = await api.get<Note>(`/notes/${id}`);
+  return response.data;
+}
+
 export async function createNote(newNote: NewNote): Promise<Note> {
   const response = await api.post<Note>('/notes', newNote);
   return response.data;
