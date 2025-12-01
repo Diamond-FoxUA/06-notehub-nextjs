@@ -7,12 +7,12 @@ import toast, { Toaster } from 'react-hot-toast';
 import css from './Notes.module.css';
 import { fetchNotes } from '@/lib/api';
 
-import NoteList from '../components/NoteList/NoteList';
-import Pagination from '../components/Pagination/Pagination';
-import Modal from '../components/Modal/Modal';
-import NoteForm from '../components/NoteForm/NoteForm';
-import SearchBox from '../components/SearchBox/SearchBox';
-import Loader from '../components/Loader/Loader';
+import NoteList from '../../components/NoteList/NoteList';
+import Pagination from '../../components/Pagination/Pagination';
+import Modal from '../../components/Modal/Modal';
+import NoteForm from '../../components/NoteForm/NoteForm';
+import SearchBox from '../../components/SearchBox/SearchBox';
+import Loader from '../../components/Loader/Loader';
 
 export default function NotesClient() {
   const [isModalOpen, setIsModalOpen] = useState(false);

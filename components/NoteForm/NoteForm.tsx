@@ -4,7 +4,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query';
 import * as Yup from 'yup';
 
 import css from './NoteForm.module.css';
-import type { NewNote } from '@/lib/types';
+import type { NewNote } from '@/types/types';
 import { createNote } from "@/lib/api";
 import toast from 'react-hot-toast';
 
