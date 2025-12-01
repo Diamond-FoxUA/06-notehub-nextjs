@@ -7,7 +7,10 @@ import TanStackProvider from "./components/TanStackProvider/TanStackProvider";
 
 export const metadata: Metadata = {
   title: "NoteHub",
-  description: "Made by Dmytro Farbun"
+  description: "Made by Dmytro Farbun",
+  icons: {
+    icon: '/favicon.svg'
+  }
 } 
 
 export default function RootLayout({
